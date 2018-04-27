@@ -17,16 +17,19 @@ class LoginWithCheckIn(LoginView):
 
     def form_valid(self, form):
         resp = super().form_valid(form)
-        check_in(self)
+        new_registry = Registry(start=timezone.now(), user=self.request.user)
+        new_registry.save()
         return resp
 
 
 class LoginWithCheckOut(LogoutView):
 
     def dispatch(self, request, *args, **kwargs):
-        check_out(self)
+        registry = Registry.objects.get(
+            user=self.request.user, end__isnull=True)
+        registry.check_out()
         resp = super().dispatch(request, *args, **kwargs)
-        
+
         return resp
 
 
@@ -36,10 +39,11 @@ class ProjectListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(ProjectListView, self).get_context_data(**kwargs)
-        total_time = Registry.objects.get(user=self.request.user, end__isnull=True)
+        total_time = Registry.objects.get(
+            user=self.request.user, end__isnull=True)
         context.update({
             'activity_journal_list': ActivityJournal.objects.filter(end__isnull=True, user=self.request.user),
-            'total_worked_time': str(total_time.total_worked_today())[:-10]
+            'total_worked_time': str(total_time.total_worked_today())
         })
         return context
 
@@ -47,7 +51,7 @@ class ProjectListView(ListView):
         qs = super().get_queryset().filter(user=self.request.user)
 
         for p in qs:
-            p.total_time = p.time_calculator(self.request.user)[:-3]
+            p.total_time = p.time_calculator(self.request.user)
 
         return qs
 
@@ -105,16 +109,3 @@ def project_stop(request, pk):
     return redirect('projects_list')
 
 
-
-def check_in(self):
-    records = Registry.objects.filter(user=self.request.user, end__isnull=True)
-
-    if len(records) == 0:
-        new_registry = Registry(start=timezone.now(), user=self.request.user)
-        new_registry.save()
-
-
-
-def check_out(self):
-    records = Registry.objects.filter(user=self.request.user, end__isnull=True)
-    records.update(end=timezone.now())

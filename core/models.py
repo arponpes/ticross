@@ -16,7 +16,7 @@ class Project(models.Model):
         for time in timers:
             if time[0] != None:
                 total_time += time[0]
-        
+
         return str(datetime.timedelta(seconds=total_time))
 
     def __str__(self):
@@ -46,8 +46,13 @@ class Registry(models.Model):
     end = models.DateTimeField(blank=True, null=True)
 
     def total_worked_today(self):
-        
+
         return timezone.now() - self.start
+
+    def check_out(self):
+        print('Esto de aqui es self.end ===== ',self.end)
+        self.end = timezone.now()
+        self.save()
 
     def __str__(self):
         return 'Usuario: {}, Hora de entrada: {}'.format(self.user, self.start)
