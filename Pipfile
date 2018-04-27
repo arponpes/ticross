@@ -4,25 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-boto3 = "*"
-brotlipy = "*"
-dj-database-url = "*"
-dj-email-url = "*"
 Django = "*"
 django-filter = "*"
 django-markupfield = "*"
-"django-model-utils==2.6.1" = "*"
-django-storages = "*"
-django-versatileimagefield = "*"
 djangorestframework = "*"
-googlemaps = "*"
 gunicorn = "*"
 markdown = "*"
 psycopg2-binary = "*"
-python-dotenv = "*"
-whitenoise = "*"
-django-widget-tweaks = "*"
-django-autoslug = {git = "https://github.com/iplweb/django-autoslug-iplweb.git", ref = "be379b83d90725b882c2ed38c9279167e69b6c7f"}
 requests = "*"
 django-heroku = "*"
 
@@ -33,8 +21,9 @@ flake8 = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-django = "*"
-opoenpyxl = "*"
+openpyxl = "*"
 django-debug-toolbar = "*"
+flag = "*"
 
 [requires]
 python_version = "3.6"
