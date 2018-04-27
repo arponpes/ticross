@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a3d16d0d9f94ed504bb0b6d52fbe8c51fdf4c2da181d4917fc11a73aba0536e7"
+            "sha256": "7184440111d7d11d9970f78ee95c440cf01205232f8a12d8746d0bfb19f2c642"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -45,14 +45,6 @@
             "index": "pypi",
             "version": "==2.0.4"
         },
-        "django-filter": {
-            "hashes": [
-                "sha256:ea204242ea83790e1512c9d0d8255002a652a6f4986e93cee664f28955ba0c22",
-                "sha256:ec0ef1ba23ef95b1620f5d481334413700fb33f45cd76d56a63f4b0b1d76976a"
-            ],
-            "index": "pypi",
-            "version": "==1.1.0"
-        },
         "django-heroku": {
             "hashes": [
                 "sha256:2bc690aab89eedbe01311752320a9a12e7548e3b0ed102681acc5736a41a4762",
@@ -60,14 +52,6 @@
             ],
             "index": "pypi",
             "version": "==0.3.1"
-        },
-        "django-markupfield": {
-            "hashes": [
-                "sha256:0b43a467b6b8e32a3bad99e6d1c489568b93e709f4d7d82d82da22ae9367840a",
-                "sha256:57e6e3884e5f5e5ce1dcb29e04c3019ee99ed38f219295abe03f558e4168f521"
-            ],
-            "index": "pypi",
-            "version": "==1.4.3"
         },
         "djangorestframework": {
             "hashes": [
@@ -91,14 +75,6 @@
                 "sha256:8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4"
             ],
             "version": "==2.6"
-        },
-        "markdown": {
-            "hashes": [
-                "sha256:9ba587db9daee7ec761cfc656272be6aabe2ed300fece21208e4aab2e457bc8f",
-                "sha256:a856869c7ff079ad84a3e19cd87a64998350c2b94e9e08e44270faef33400f81"
-            ],
-            "index": "pypi",
-            "version": "==2.6.11"
         },
         "psycopg2": {
             "hashes": [
@@ -281,14 +257,6 @@
                 "sha256:48fed4b4a191e2b42ad20c14115f1c6d36d338b80192075d7573f0f42d7fb321"
             ],
             "version": "==0.8.13"
-        },
-        "flag": {
-            "hashes": [
-                "sha256:5b229b31943b5699ab65609921d63e9b228ba9e72f307f9510568c78f18b1fed",
-                "sha256:79b83fec0572790e62d574809a3dc10ae9d2464366d3373fa89de73cd8d03694"
-            ],
-            "index": "pypi",
-            "version": "==0.1.1"
         },
         "flake8": {
             "hashes": [

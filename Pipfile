@@ -5,11 +5,8 @@ name = "pypi"
 
 [packages]
 Django = "*"
-django-filter = "*"
-django-markupfield = "*"
 djangorestframework = "*"
 gunicorn = "*"
-markdown = "*"
 psycopg2-binary = "*"
 requests = "*"
 django-heroku = "*"
@@ -23,7 +20,6 @@ pytest-cov = "*"
 pytest-django = "*"
 openpyxl = "*"
 django-debug-toolbar = "*"
-flag = "*"
 
 [requires]
 python_version = "3.6"
