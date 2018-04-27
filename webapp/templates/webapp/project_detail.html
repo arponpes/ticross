@@ -1,0 +1,31 @@
+{% extends 'webapp/base.html' %}
+
+{% block content %}
+{% include "webapp/navbar.html" %}
+
+
+<div class="card w-100">
+        <div class="card-header">
+            {{project.project_name}}
+        </div>
+        <div class="card-body">
+
+            <p class="card-text">{{project.description}}</p>
+            <br>
+            <a href="{% url 'project_edit' pk=project.pk %}" class="btn btn-info">Editar</a> 
+            <a href="{% url 'project_remove' pk=project.pk %}" class="btn btn-danger">Borrar</a> 
+            
+            
+            
+        </div>
+        <div class="dropdown-divider"></div>
+            <div class="card-header">
+                Estadisticas
+            </div>
+
+
+
+    </div>
+
+
+{% endblock %}

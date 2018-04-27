@@ -1,0 +1,17 @@
+
+
+
+{% extends 'webapp/base.html' %} {% block content %}
+{% include "webapp/navbar.html" %}
+
+<h2>Nuevo Proyecto</h2>
+<form method="POST">
+    {% csrf_token %} 
+    <br>
+    
+    {{ form }}
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>
+
+{% endblock %}
+ 

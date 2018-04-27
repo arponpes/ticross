@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="text-center">Bienvenido</h1>
+          </div>
+          <form method="post">
+            {% csrf_token %}
+           <div class="modal-body">
+               <div class="form-group">
+                   <input name="username" id="id_username" type="text" class="form-control input-lg" placeholder="Username"/>
+               </div>
+  
+               <div class="form-group">
+                   <input type="password" name="password" required="" id="id_password" class="form-control input-lg" placeholder="Password"/>
+               </div>
+  
+               <div class="form-group">
+                   <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login"/>
+               </div>
+           </div>
+          </form>
+      </div>
+   </div>
+
+  </div>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+

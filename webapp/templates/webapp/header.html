@@ -1,0 +1,13 @@
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2 class="display-5">Hola, {{ user.get_username }}.</h2>
+        <p class="lead">{% now "j F Y H:i" %}</p>
+        {% for activityjournal in activity_journal_list %}
+        <p class="lead">Projecto Actual: {{ activityjournal.project }}</p>
+        {% endfor %}
+        
+        <p class="lead">Tiempo trabajado hoy: {{ total_worked_time  }}</p>
+        
+    </div>
+</div>
