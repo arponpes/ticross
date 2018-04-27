@@ -2,7 +2,6 @@ from rest_framework import viewsets
 from .serializers import ProjectSerializer, ActivityJournalSerializer, RegistrySerializer, UserSerializer
 from core.models import Project, ActivityJournal, Registry
 from django.contrib.auth.models import User
-# Create your views here.
 
 
 class ProjectViewSet(viewsets.ModelViewSet):
