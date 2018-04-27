@@ -1,5 +1,5 @@
 [run]
-omit = .venv/*, core/migrations/*
+omit = .venv/*, core/migrations/*, appweb/migrations/*, api/migratios/*, api/apps.py, webapp/apps.py, core/apps.py, workTimer/wsgy.py
 
 [report]
 show_missing = true
