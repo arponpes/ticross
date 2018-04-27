@@ -1,0 +1,9 @@
+{% extends 'webapp/base.html' %}
+
+{% block content %}
+{% include "webapp/navbar.html" %}
+<form action="" method="post">{% csrf_token %}
+    <p>Seguro que quieres borrar "{{ object }}"?</p>
+    <input type="submit" value="Estoy Seguro" />
+</form>
+{% endblock %}

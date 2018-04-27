@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Django = "*"
+djangorestframework = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+requests = "*"
+django-heroku = "*"
+
+[dev-packages]
+coverage = "*"
+factory-boy = "*"
+flake8 = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-django = "*"
+openpyxl = "*"
+django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.6"

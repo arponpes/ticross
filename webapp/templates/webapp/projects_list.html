@@ -1,0 +1,24 @@
+{% extends 'webapp/base.html' %}
+{% block content %}
+{% include "webapp/navbar.html" %}
+{% include "webapp/header.html" %}
+
+   
+    {% for project in object_list %}
+    <div class="card w-100">
+        <div class="card-header">
+            {{project.project_name}}, {{ project.total_time }} 
+        </div>
+        <div class="card-body">
+
+            <p class="card-text">{{project.description}}</p>
+            <a href="{% url 'project_start' pk=project.pk %}" class="btn btn-danger">Iniciar</a>
+            <a href="{% url 'project_stop' pk=project.pk%}" class="btn btn-outline-danger">Detener</a>
+            <a href="{% url 'project_detail' pk=project.pk %}" class="btn btn-outline-info">Detalles</a>
+
+        </div>
+    </div>
+
+
+    {% endfor %}
+    {% endblock %}
