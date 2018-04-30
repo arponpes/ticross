@@ -50,7 +50,6 @@ class Registry(models.Model):
         return timezone.now() - self.start
 
     def check_out(self):
-        print('Esto de aqui es self.end ===== ',self.end)
         self.end = timezone.now()
         self.save()
 
