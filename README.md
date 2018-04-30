@@ -1,7 +1,5 @@
 # Ticross
-
-[![Coverage Status](https://coveralls.io/repos/github/arponpes/Ticross/badge.svg?branch=feat%2Fgithubmigrate)](https://coveralls.io/github/arponpes/Ticross?branch=feat%2Fgithubmigrate ) [![Build Status](https://travis-ci.org/arponpes/Prueba-travis.svg?branch=master)](https://travis-ci.org/arponpes/Prueba-travis)
-
+[![Build Status](https://travis-ci.org/arponpes/ticross.svg?branch=master)](https://travis-ci.org/arponpes/ticross) [![Coverage Status](https://coveralls.io/repos/github/arponpes/ticross/badge.svg?branch=master)](https://coveralls.io/github/arponpes/ticross?branch=master)
 
 ### Configure development environment
 
