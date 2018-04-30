@@ -35,4 +35,10 @@ class ActivityJournalModelTest(TestCase):
         self.assertEqual(activity_journal.time_lapse,
                          timezone.timedelta(hours=3).total_seconds())
 
-        
+
+class RegistryTest(TestCase):
+
+    def test_check_out(self):
+        registry = RegistryFactory()
+        registry.check_out()
+        assert registry.end != None
