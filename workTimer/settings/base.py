@@ -13,7 +13,6 @@ https://docs.djangoProject.com/en/2.0/ref/settings/
 import os
 
 
-
 # Build paths inside the Project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,9 +27,6 @@ SECRET_KEY = 'vxpz+4x6)82=jm2mm_n!i936dledfgv)anuf(t@2v)sl5ohl7e'
 DEBUG = True
 
 
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,7 +39,8 @@ INSTALLED_APPS = [
     'core',
     'webapp',
     'api',
-    'rest_framework',    
+    'rest_framework',
+    'rest_framework.authtoken',
     'debug_toolbar',
 ]
 
@@ -57,13 +54,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
 ]
 
 ROOT_URLCONF = 'workTimer.urls'
-
-
-
 
 
 TEMPLATES = [
@@ -82,12 +76,15 @@ TEMPLATES = [
     },
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    )
-}
 
+REST_FRAMEWORK = {
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+
+    ),
+
+}
 WSGI_APPLICATION = 'workTimer.wsgi.application'
 
 
@@ -100,7 +97,6 @@ DATABASES = {
         'NAME': 'timecontroller',
     }
 }
-
 
 
 # Password validation
@@ -143,4 +139,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-
