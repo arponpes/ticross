@@ -1,4 +1,4 @@
-# Ticross
+# [Ticross](https://time-controller.herokuapp.com/)
 [![Build Status](https://travis-ci.org/arponpes/ticross.svg?branch=master)](https://travis-ci.org/arponpes/ticross) [![Coverage Status](https://coveralls.io/repos/github/arponpes/ticross/badge.svg?branch=master)](https://coveralls.io/github/arponpes/ticross?branch=master)
 
 ### Configure development environment
