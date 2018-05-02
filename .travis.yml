@@ -7,11 +7,11 @@ python:
   - "3.6"
 install:
   - pip install pipenv
-  - pip install coveralls
   - pipenv install --dev
+  - pipenv install coveralls
 script:
-  - coverage erase
-  - pytest --cov --cov-report= --junitxml=junit.xml
-  - coverage xml -o coverage.xml
+  - pipenv run coverage erase
+  - pipenv run pytest --cov --cov-report= --junitxml=junit.xml
+  - pipenv run coverage xml -o coverage.xml
 after_success:
-  - coveralls
+  - pipenv run coveralls
