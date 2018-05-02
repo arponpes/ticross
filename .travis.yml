@@ -1,6 +1,9 @@
 language: python
 addons:
   postgresql: "9.6"
+env:
+  global:
+    - PIPENV_VENV_IN_PROJECT=1
 services:
   - postgresql
 python:
@@ -8,10 +11,10 @@ python:
 install:
   - pip install pipenv
   - pipenv install --dev
-  - pipenv install coveralls
+  - pip install coveralls
 script:
-  - pipenv run coverage erase
-  - pipenv run pytest --cov --cov-report= --junitxml=junit.xml
-  - pipenv run coverage xml -o coverage.xml
+  - coverage erase
+  - pytest --cov --cov-report= --junitxml=junit.xml
+  - coverage xml -o coverage.xml
 after_success:
-  - pipenv run coveralls
+  - coveralls
