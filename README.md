@@ -24,3 +24,8 @@ python manage.py createsuperuser
 | Name          | Command           | 
 | ------------- |:-------------:| 
 | projectExcel  | Print the projects in excel |
+
+### Documentación
+
+
+* [django](https://docs.djangoproject.com/en/2.0/)
