@@ -12,11 +12,10 @@ python:
 install:
   - pip install pipenv
   - pipenv install --dev
-  - pipenv shell
-  - pip install coveralls
+  - pipenv install coveralls
 script:
-  - coverage erase
-  - pytest --cov --cov-report= --junitxml=junit.xml
-  - coverage xml -o coverage.xml
+  - pipenv run coverage erase
+  - pipenv run pytest --cov --cov-report= --junitxml=junit.xml
+  - pipenv run coverage xml -o coverage.xml
 after_success:
-  - coveralls
+  - pipenv run coveralls
