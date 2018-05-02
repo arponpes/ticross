@@ -11,6 +11,7 @@
         }
 
     }
+    repetir()
 
     setInterval(repetir, 1000)
 
