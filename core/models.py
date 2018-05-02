@@ -55,3 +55,5 @@ class Registry(models.Model):
 
     def __str__(self):
         return 'Usuario: {}, Hora de entrada: {}'.format(self.user, self.start)
+
+

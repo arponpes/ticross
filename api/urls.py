@@ -1,6 +1,7 @@
 from django.urls import path, include, re_path
 from django.contrib.auth.decorators import login_required
 from rest_framework import routers
+from rest_framework.authtoken import views as rfviews
 from api import views
 
 
@@ -15,4 +16,5 @@ urlpatterns = [
     path('', include((router.urls, 'api'), namespace='api')),
     re_path(r'^api-auth/', include('rest_framework.urls',
                                    namespace='rest_framework')),
+    re_path(r'^api-token-auth/', rfviews.obtain_auth_token),
 ]
