@@ -7,13 +7,15 @@
 {% include "webapp/navbar.html" %}
 
 <h2>Nuevo Proyecto</h2>
-<form method="POST">
+<form method="POST" id="project">
     {% csrf_token %} 
     <br>
     
     {{ form }}
     <button type="submit" class="save btn btn-default" id="btn-save">Save</button>
 </form>
+
 <script src="{% static 'js/new_project.js' %}"></script>
+
 {% endblock %}
  
