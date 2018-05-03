@@ -1,7 +1,9 @@
 import factory
 from .models import Project, ActivityJournal, Registry
 from django.contrib.auth.models import User
+from django.utils import timezone
 import datetime as dt
+
 
 
 class UserFactory(factory.django.DjangoModelFactory):
@@ -31,5 +33,5 @@ class RegistryFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Registry
 
-    start= factory.LazyFunction(dt.datetime.utcnow)
+    start= factory.LazyFunction(timezone.now)
     user = factory.SubFactory(UserFactory)

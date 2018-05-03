@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.utils import timezone
+from django.utils import timezone as tz
 import datetime
 
 
@@ -26,12 +26,12 @@ class Project(models.Model):
 class ActivityJournal(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    start = models.DateTimeField(default=datetime.datetime.now())
+    start = models.DateTimeField(default=tz.now())
     end = models.DateTimeField(blank=True, null=True)
     time_lapse = models.IntegerField(blank=True, null=True)
 
     def close_activity(self):
-        self.end = timezone.now()
+        self.end = tz.now()
         diff = self.end - self.start
         self.time_lapse = int(diff.total_seconds())
         self.save()
@@ -42,15 +42,15 @@ class ActivityJournal(models.Model):
 
 class Registry(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    start = models.DateTimeField(default=datetime.datetime.now())
+    start = models.DateTimeField(default=tz.now())
     end = models.DateTimeField(blank=True, null=True)
 
     def total_worked_today(self):
 
-        return timezone.now() - self.start
+        return tz.now() - self.start
 
     def check_out(self):
-        self.end = timezone.now()
+        self.end = tz.now()
         self.save()
 
     def __str__(self):
