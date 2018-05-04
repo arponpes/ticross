@@ -26,7 +26,7 @@ class Project(models.Model):
 class ActivityJournal(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    start = models.DateTimeField(default=tz.now())
+    start = models.DateTimeField(default=tz.now)
     end = models.DateTimeField(blank=True, null=True)
     time_lapse = models.IntegerField(blank=True, null=True)
 
@@ -42,7 +42,7 @@ class ActivityJournal(models.Model):
 
 class Registry(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    start = models.DateTimeField(default=tz.now())
+    start = models.DateTimeField(default=tz.now)
     end = models.DateTimeField(blank=True, null=True)
 
     def total_worked_today(self):

@@ -12,6 +12,7 @@ requests = "*"
 django-heroku = "*"
 django-rest-auth = "*"
 openpyxl = "*"
+django-debug-toolbar = "*"
 
 [dev-packages]
 coverage = "*"

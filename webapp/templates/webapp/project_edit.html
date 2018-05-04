@@ -1,21 +1,11 @@
+ {% extends 'webapp/base.html' %} {% load staticfiles %} {% block content %} {% include "webapp/navbar.html" %}
 
 
+<div class="container">
+    <h2>Nuevo Proyecto</h2>
+    <form method="POST" id="project" class="newProject">
+        {% csrf_token %}
+        <br> {{ form }}
 
-{% extends 'webapp/base.html' %}
-{% load staticfiles %}
-{% block content %}
-{% include "webapp/navbar.html" %}
-
-<h2>Nuevo Proyecto</h2>
-<form method="POST" id="project">
-    {% csrf_token %} 
-    <br>
-    
-    {{ form }}
-    <button type="submit" class="save btn btn-default" id="btn-save">Save</button>
-</form>
-
-<script src="{% static 'js/new_project.js' %}"></script>
-
-{% endblock %}
- 
+</div>
+<script src="{% static 'js/new_project.js' %}"></script> {% endblock %}
