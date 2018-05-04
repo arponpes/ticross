@@ -6,15 +6,6 @@
     <form method="POST" id="project" class="newProject">
         {% csrf_token %}
         <br> {{ form }}
-        <form method="POST" id="project">
-            <input name="csrfmiddlewaretoken" value="GXlM0Eiys8FMIhpt6FqDqJWJvKLFeudIEhdRzLPdYjNqFRn9g4VFXiU0y1kV5MsH" type="hidden">
-            <br>
-            <label for="id_project_name">Project name:</label>
-            <input name="project_name" maxlength="150" required="" class="form-control" id="id_project_name" type="text">
-            <label for="id_description">Description:</label>
-            <textarea name="description" cols="40" rows="10" required="" class="form-control" id="id_description"></textarea>
 
-            <button type="submit" class="save btn btn-primary btn-lg" id="btn-save">Save</button>
-        </form>
 </div>
 <script src="{% static 'js/new_project.js' %}"></script> {% endblock %}

@@ -68,14 +68,14 @@ class ProjectDetail(DetailView):
 
 class ProjectCreate(CreateView):
     model = Project
-    fields = [ 'user']
+    fields = ['user', 'project_name','description']
     template_name = 'webapp/project_edit.html'
     success_url = reverse_lazy('projects_list')
 
 
 class ProjectUpdate(UpdateView):
     model = Project
-    fields = ['user']
+    fields = ['user', 'project_name','description']
     template_name = 'webapp/project_edit.html'
     success_url = reverse_lazy('projects_list')
 
