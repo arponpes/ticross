@@ -18,6 +18,10 @@ class LoginWithCheckIn(LoginView):
     def form_valid(self, form):
         resp = super().form_valid(form)
         new_registry = Registry(start=timezone.now(), user=self.request.user)
+        registry = Registry.objects.filter(
+            user=self.request.user, end__isnull=True)
+        for r in registry:
+            r.check_out()
         new_registry.save()
         return resp
 
@@ -25,9 +29,10 @@ class LoginWithCheckIn(LoginView):
 class LoginWithCheckOut(LogoutView):
 
     def dispatch(self, request, *args, **kwargs):
-        registry = Registry.objects.get(
+        registry = Registry.objects.filter(
             user=self.request.user, end__isnull=True)
-        registry.check_out()
+        for r in registry:
+            r.check_out()
         resp = super().dispatch(request, *args, **kwargs)
 
         return resp
