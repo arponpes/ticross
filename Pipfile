@@ -10,7 +10,6 @@ gunicorn = "*"
 psycopg2-binary = "*"
 requests = "*"
 django-heroku = "*"
-django-rest-auth = "*"
 openpyxl = "*"
 django-debug-toolbar = "*"
 
@@ -21,9 +20,8 @@ flake8 = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-django = "*"
-django-debug-toolbar = "*"
-pylint = "*"
-"autopep8" = "*"
+
+
 
 [requires]
 python_version = "3.6"
