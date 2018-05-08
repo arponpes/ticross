@@ -6,6 +6,6 @@
     <form method="POST" id="project" class="newProject">
         {% csrf_token %}
         <br> {{ form }}
-
+        <button type="submit" id="btn-save" class="btn btn-default">GUARDAR</button>
 </div>
 <script src="{% static 'js/new_project.js' %}"></script> {% endblock %}
