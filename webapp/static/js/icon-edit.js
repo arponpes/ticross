@@ -14,13 +14,13 @@ $(".iconSave").on('click', function () {
     $('#' + target).removeClass('editMode')
 
     var newName = $(this).parent().children('.newName').val()
-    $(this).parent().children('.title').text(newName)
+    var title = $(this).parent().children('.title')
     $.ajax({
         type: "PATCH",
         url: '/api/projects/'+target+'/',
         data: { project_name: newName },
         success: function (response) {
-            
+            title.text(newName)
         }
 
     });
