@@ -1,5 +1,5 @@
 [run]
-omit = .venv/*, migrations/*, apps.py/*, workTimer/wsgi.py, test_functional.py  
+omit = .venv/*, migrations/*, apps.py/*, workTimer/wsgi.py
 
 [report]
 show_missing = true
