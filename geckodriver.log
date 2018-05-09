@@ -286,3 +286,138 @@ JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.mi
 JavaScript error: http://localhost:8000/static/js/crono.js, line 4: TypeError: timeWorkedEl is null
 JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525874828196	geckodriver	INFO	geckodriver 0.20.1
+1525874828206	geckodriver	INFO	Listening on 127.0.0.1:43061
+1525874829291	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.3oY82rVMU15z"
+1525874829510	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525874829598	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525874829598	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525874829744	Marionette	INFO	Enabled via --marionette
+1525874830868	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525874831044	Marionette	INFO	Listening on port 44151
+1525874831112	Marionette	WARN	TLS certificate errors will be ignored for this session
+1525874831208	geckodriver	INFO	geckodriver 0.20.1
+1525874831213	geckodriver	INFO	Listening on 127.0.0.1:41381
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525874875598	geckodriver	INFO	geckodriver 0.20.1
+1525874875607	geckodriver	INFO	Listening on 127.0.0.1:52103
+1525874876686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.v6wORh7KjLG8"
+1525874876894	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525874876986	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525874876986	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525874877132	Marionette	INFO	Enabled via --marionette
+1525874878232	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525874878536	Marionette	INFO	Listening on port 33201
+1525874878596	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525876724354	geckodriver	INFO	geckodriver 0.20.1
+1525876724359	geckodriver	INFO	Listening on 127.0.0.1:45769
+1525876725452	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.k8zR0wCMRZS8"
+1525876725684	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525876725770	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525876725770	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525876725930	Marionette	INFO	Enabled via --marionette
+1525876727152	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525876727342	Marionette	INFO	Listening on port 36193
+1525876727380	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525876861265	geckodriver	INFO	geckodriver 0.20.1
+1525876861271	geckodriver	INFO	Listening on 127.0.0.1:58497
+1525876862345	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uUdEBX2OcDj6"
+1525876862576	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525876862664	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525876862664	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525876862818	Marionette	INFO	Enabled via --marionette
+1525876863962	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525876864346	Marionette	INFO	Listening on port 42763
+1525876864370	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+
+(/usr/lib64/firefox/firefox:21720): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525878574094	geckodriver	INFO	geckodriver 0.20.1
+1525878574103	geckodriver	INFO	Listening on 127.0.0.1:37589
+1525878575219	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Rkp3QvXjyGkK"
+1525878575458	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525878575558	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525878575558	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525878575724	Marionette	INFO	Enabled via --marionette
+1525878576908	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525878577104	Marionette	INFO	Listening on port 37277
+1525878577142	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1525878578734	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:274 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4432 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2292 < GeckoDriver.prototype.quit()@driver.js:3270 < despatch()@server.js:557 < execute()@server.js:531 < onPacket/<()@server.js:506 < onPacket()@server.js:505 < _onJSONObjectReady/<()@transport.js:500
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525879727616	geckodriver	INFO	geckodriver 0.20.1
+1525879727624	geckodriver	INFO	Listening on 127.0.0.1:34005
+1525879728704	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.xkoC4q70dZ7b"
+1525879728940	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879729044	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525879729044	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525879729202	Marionette	INFO	Enabled via --marionette
+1525879730376	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879730560	Marionette	INFO	Listening on port 45391
+1525879730664	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://localhost:8000/static/js/crono.js, line 4: TypeError: timeWorkedEl is null
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525879847858	geckodriver	INFO	geckodriver 0.20.1
+1525879847866	geckodriver	INFO	Listening on 127.0.0.1:35921
+1525879848943	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wdaT5uNI5mo1"
+1525879849154	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879849252	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525879849252	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525879849396	Marionette	INFO	Enabled via --marionette
+1525879850524	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879850724	Marionette	INFO	Listening on port 37001
+1525879850800	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525879901864	geckodriver	INFO	geckodriver 0.20.1
+1525879901869	geckodriver	INFO	Listening on 127.0.0.1:39059
+1525879902935	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ETNAgFZ0bwdt"
+1525879903144	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879903230	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525879903232	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525879903368	Marionette	INFO	Enabled via --marionette
+1525879904498	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879904678	Marionette	INFO	Listening on port 34507
+1525879904760	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525879956536	geckodriver	INFO	geckodriver 0.20.1
+1525879956541	geckodriver	INFO	Listening on 127.0.0.1:35759
+1525879957600	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.EdBM9yjIpu00"
+1525879957818	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879957912	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525879957912	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525879958056	Marionette	INFO	Enabled via --marionette
+1525879959148	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525879959312	Marionette	INFO	Listening on port 46387
+1525879959444	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://localhost:8000/static/js/crono.js, line 4: TypeError: timeWorkedEl is null
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1525880154710	geckodriver	INFO	geckodriver 0.20.1
+1525880154714	geckodriver	INFO	Listening on 127.0.0.1:48895
+1525880155802	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.3nY9SdpTmvx8"
+1525880156030	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525880156116	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 969"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:969 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:938 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1176 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1532 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3276 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:264 < _startProvider()@resource://gre/modules/AddonManager.jsm:740 < startup()@resource://gre/modules/AddonManager.jsm:907 < startup()@resource://gre/modules/AddonManager.jsm:3089 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1525880156118	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1525880156262	Marionette	INFO	Enabled via --marionette
+1525880157372	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1525880157538	Marionette	INFO	Listening on port 41967
+1525880157642	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://localhost:8000/static/js/crono.js, line 4: TypeError: timeWorkedEl is null
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

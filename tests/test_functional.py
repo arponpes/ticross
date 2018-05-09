@@ -1,39 +1,37 @@
-import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import pytest
+from django.contrib.auth.models import User
 
 
-class PythonOrgSearch(unittest.TestCase):
+@pytest.fixture(scope='module')
+def browser(request):
+    """Provide a selenium webdriver instance."""
 
-    def setUp(self):
-        self.driver = webdriver.Firefox()
+    # options.add_argument('headless')
+    browser_ = webdriver.Firefox()
+    yield browser_    # TearDown
+    browser_.quit()
 
-    def test(self):
-        driver = self.driver
-        driver.get("http://localhost:8000")
-        self.login()
-        self.createProject()
-        self.logout()
 
-    def login(self):
-        self.driver.find_element_by_id('id_username').send_keys('admin')
-        self.driver.find_element_by_id('id_password').send_keys('adminadmin')
-        self.driver.find_element_by_id('btn-login').click()
+@pytest.mark.django_db
+def test_login(live_server, browser):
 
-    def createProject(self):
-        self.driver.find_element_by_id('newProject').click()
-        element = self.driver.find_element_by_id('id_user')
-        all_options = element.find_elements_by_tag_name("option")
-        for option in all_options:
-            option.click()
-        self.driver.find_element_by_id(
-            'id_project_name').send_keys('this is a project name')
-        self.driver.find_element_by_id(
-            'id_description').send_keys('this is a description')
-        self.driver.find_element_by_id('btn-save').click()
+    browser.get("http://localhost:8000")
+    User.objects.create(username='admin', password='adminadmin')
+    browser.find_element_by_id('id_username').send_keys('admin')
+    browser.find_element_by_id('id_password').send_keys('adminadmin')
+    browser.find_element_by_id('btnLogin').click()
 
-    def logout(self):
-        self.driver.find_element_by_id('btnLogout').click()
+    browser.find_element_by_id('newProject').click()
+    element = browser.find_element_by_id('id_user')
+    all_options = element.find_elements_by_tag_name("option")
+    for option in all_options:
+        option.click()
+    browser.find_element_by_id(
+        'id_project_name').send_keys('this is a project name')
+    browser.find_element_by_id(
+        'id_description').send_keys('this is a description')
+    browser.find_element_by_id('btn-save').click()
 
-    def tearDown(self):
-        self.driver.close()
+    browser.find_element_by_id('btnLogout').click()

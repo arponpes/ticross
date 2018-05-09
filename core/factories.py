@@ -5,12 +5,21 @@ from django.utils import timezone
 import datetime as dt
 
 
-
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
     username = factory.Faker('user_name')
+    password = factory.Faker('password')
+    @classmethod
+    def _prepare(cls, create, **kwargs):
+        if 'password' in kwargs:
+            password = kwargs.pop('password')
+        user = super(UserFactory, cls)._prepare(create, **kwargs)
+        user.set_password(password)
+        if create:
+            user.save()
+        return user
 
 
 class ProjectFactory(factory.django.DjangoModelFactory):
@@ -33,5 +42,5 @@ class RegistryFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Registry
 
-    start= factory.LazyFunction(timezone.now)
+    start = factory.LazyFunction(timezone.now)
     user = factory.SubFactory(UserFactory)
