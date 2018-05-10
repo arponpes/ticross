@@ -1,3 +1,22 @@
-.newProject{
+.newName{
+    display: none;
+}
+.iconSave{
+    display: none;
+}
+.title, .iconEdit{
+display: inline;
+} 
+.editMode .newName{
+    display: inline;
+}
+.editMode .iconSave{
+    display: inline;
+}
+.editMode .title{
+    display: none;
+}
 
+.editMode .iconEdit{
+    display: none;
 }
