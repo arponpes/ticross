@@ -18,7 +18,7 @@ def browser(request):
 @pytest.mark.django_db
 def test_login(live_server, browser):
 
-    browser.get("http://localhost:8000")
+    browser.get(live_server.url)
     User.objects.create(username='admin', password='adminadmin')
     browser.find_element_by_id('id_username').send_keys('admin')
     browser.find_element_by_id('id_password').send_keys('adminadmin')
