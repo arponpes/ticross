@@ -4,7 +4,7 @@
 {% include "webapp/navbar.html" %}
 {% include "webapp/header.html" %}
 {% for project in object_list %}
-    <div class="card w-100 " id="{{project.pk}}">
+    <div class="card w-100 "  id="{{project.pk}}" >
         <div class="card-header">
     
             <button data-target="{{project.pk}}" class="iconSave btn btn-link">

@@ -5,7 +5,7 @@
     display: none;
 }
 .title, .iconEdit{
-display: inline;
+    display: inline;
 } 
 .editMode .newName{
     display: inline;
@@ -16,7 +16,6 @@ display: inline;
 .editMode .title{
     display: none;
 }
-
 .editMode .iconEdit{
     display: none;
 }
@@ -34,10 +33,10 @@ display: inline;
  
 .inner {
     width:100%;
-    position:absolute;
     padding-left:5px;
     font-family:verdana;
     font-size:12px;
     top:30%;
+    bottom: 30%;
 }
  

@@ -27,14 +27,14 @@ $(document).ready(function () {
 
     if (getCookie('ticross') == "1") {
         document.getElementById("barraaceptacion").style.display = "none";
-    }else{
+    } else {
         document.getElementById("barraaceptacion").style.display = "block";
     }
     function PonerCookie() {
         setCookie('ticross', '1', 365);
-        
+
         document.getElementById("barraaceptacion").style.display = "none";
-        
+
     }
-$("#ok").on("click", PonerCookie);
+    $("#ok").on("click", PonerCookie);
 });
