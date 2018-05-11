@@ -5,7 +5,7 @@
     display: none;
 }
 .title, .iconEdit{
-display: inline;
+    display: inline;
 } 
 .editMode .newName{
     display: inline;
@@ -16,7 +16,27 @@ display: inline;
 .editMode .title{
     display: none;
 }
-
 .editMode .iconEdit{
     display: none;
 }
+#barraaceptacion {
+    display:block;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding-bottom:20px;
+    width:100%;
+    text-align:center;
+    min-height:40px;
+}
+ 
+.inner {
+    width:100%;
+    padding-left:5px;
+    font-family:verdana;
+    font-size:12px;
+    top:30%;
+    bottom: 30%;
+}
+ 
