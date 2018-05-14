@@ -1,15 +1,9 @@
-<div class="container">
-    <div class="row">
-        <div class="col col-xl-3">
 
-            <select class="custom-select" name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %}>
-                {% for group_name, group_choices, group_index in widget.optgroups %} {% if group_name %}
-                <optgroup label="{{ group_name }}">
-                    {% endif %} {% for option in group_choices %} {% include option.template_name with widget=option %} {% endfor %} {% if group_name%}
-                </optgroup>{% endif %}{% endfor %}
+
+            <select id="id_user" name="user" required="" class="selectpicker form-control" name="{{ field.name }}" multiple >
+                
+                {% for x,y in field.widget.choices %}
+                {{ x }},  {{y}}
+                <option value="{{ x }}"{% if field.value %} selected{% endif %}>{{ y }}</option>
+                {% endfor %}
             </select>
-        </div>
-    </div>
-
-</div>
-<br>

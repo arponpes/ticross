@@ -1,10 +1,10 @@
 {% load staticfiles %}
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron">
     <div class="container">
-        <h2 class="display-5">Hola, {{ user.get_username }}.</h2>
+        <h2 class="display-4 greeting">Hola, {{ user.get_username }}.</h2>
         <p class="lead">{% now "j F Y H:i" %}</p>
         {% for activityjournal in activity_journal_list %}
-        <p class="lead">Projecto Actual: {{ activityjournal.project }}</p>
+        <p class="lead">Proyecto Actual: {{ activityjournal.project }}</p>
         {% endfor %}
         <p class="lead">Tiempo trabajado hoy:</p> <div id="timeworked">{{ total_worked_time  }}</div>
         

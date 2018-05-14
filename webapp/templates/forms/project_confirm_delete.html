@@ -1,9 +1,13 @@
 {% extends 'webapp/base.html' %}
-
+{% load staticfiles %}
 {% block content %}
 {% include "webapp/navbar.html" %}
-<form action="" method="post">{% csrf_token %}
-    <p>Seguro que quieres borrar "{{ object }}"?</p>
-    <input type="submit" value="Estoy Seguro" />
-</form>
+<div class="delete-form">
+    <form action="" method="post" id="">{% csrf_token %}
+        <p class="delete-title">Seguro que quieres borrar "{{ object }}"?</p>
+        <p class="delte-warning">Esta accion borrara todos los registros del proyecto y no tiene vuelta atras.</p>
+        <a class="btn btn-info" href="{% url 'projects_list' %}">Inicio</a>
+        <input type="submit" class="btn btn-danger" value="Estoy Seguro" />
+    </form>
+</div>
 {% endblock %}
