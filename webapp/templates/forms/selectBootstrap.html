@@ -1,17 +1,9 @@
-<div class="container">
-    <div class="row">
-        <div class="col col-xl-3">
 
-    {{field.widget.choices}}
 
-            <select class="custom-select form-control" name="{{ field.name }}">
+            <select id="id_user" name="user" required="" class="selectpicker form-control" name="{{ field.name }}" multiple >
+                
                 {% for x,y in field.widget.choices %}
                 {{ x }},  {{y}}
                 <option value="{{ x }}"{% if field.value %} selected{% endif %}>{{ y }}</option>
                 {% endfor %}
             </select>
-        </div>
-    </div>
-
-</div>
-<br>

@@ -97,7 +97,11 @@ body {
 .greeting {
     text-align: center;
 }
-
+.greeting-new{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
 .timeworked {
     font-size: 5em;
 }
@@ -133,5 +137,34 @@ body {
     font-size: 2rem;
 }
 .delte-warning{
+    font-size: 1rem;
+}
+
+.cont-newProject{
+    border: 0;
+    border-top: 6px solid #16A2B8;
+    box-shadow: 0 2px 6px 0;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: white;
+    padding-bottom: 30px;
+}
+.newProject-element{
+
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    margin-top: 15px;
+    margin-left: auto;
+}
+.textarea{
+    width: 320px;
+}
+#id_project_name{
+    font-size: 1.3rem;
+}
+.dropdown-item{
+    font-family: Arial;
     font-size: 1rem;
 }
