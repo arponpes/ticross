@@ -3,32 +3,40 @@
 {% block content %}
 {% include "webapp/navbar.html" %}
 {% include "webapp/header.html" %}
-{% for project in object_list %}
-    <div class="card w-100 "  id="{{project.pk}}" >
+<div class="cont">
+
+    {% for project in object_list %}
+    <div class="card card-list" id="{{project.pk}}">
         <div class="card-header">
-    
+
             <button data-target="{{project.pk}}" class="iconSave btn btn-link">
-                <i class="far fa-bookmark"></i>
+                <i class="far fa-save fa-2x"></i>
             </button>
             <input data-target="{{project.pk}}" class="newName"></input>
-    
+
             <button data-target="{{project.pk}}" class="iconEdit btn btn-link">
-                <i class="far fa-edit"></i>
+                <i class="far fa-edit fa-lg"></i>
             </button>
-            <p data-target="{{project.pk}}" class="title"> {{project.project_name}}</p>, {{ project.total_time }}
-    
+            <p data-target="{{project.pk}}" class="title"> {{project.project_name}}</p>
+            <p id="crono-project">{{ project.total_time }}</p>
+
         </div>
         <div class="card-body">
-    
+
             <p class="card-text">{{project.description}}</p>
-            <a href="{% url 'project_start' pk=project.pk %}" class="btn btn-danger">Iniciar</a>
-            <a href="{% url 'project_stop' pk=project.pk%}" class="btn btn-outline-danger">Detener</a>
-            <a href="{% url 'project_detail' pk=project.pk %}" class="btn btn-outline-info">Detalles</a>
-    
+            <a href="{% url 'project_start' pk=project.pk %}" class="btn btn-info">Iniciar</a>
+            <a href="{% url 'project_stop' pk=project.pk%}" class="btn btn-light">Detener</a>
+            <a href="{% url 'project_detail' pk=project.pk %}" class="btn btn-light">Detalles</a>
+
+
         </div>
+
     </div>
 
-{% endfor %}
+
+    {% endfor %}
+
+</div>
 {% include "webapp/cookie.html" %}
     <script src="{% static 'js/icon-edit.js' %}"></script>
 {% endblock %}

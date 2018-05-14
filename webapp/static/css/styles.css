@@ -1,42 +1,137 @@
-.newName{
+.newName {
     display: none;
 }
-.iconSave{
+
+.iconSave {
     display: none;
 }
-.title, .iconEdit{
-    display: inline;
-} 
-.editMode .newName{
-    display: inline;
-}
-.editMode .iconSave{
+
+.title,
+.iconEdit {
     display: inline;
 }
-.editMode .title{
+
+.editMode .newName {
+    display: inline;
+}
+
+.editMode .iconSave {
+    display: inline;
+}
+
+.editMode .title {
     display: none;
 }
-.editMode .iconEdit{
+
+.editMode .iconEdit {
     display: none;
 }
+
 #barraaceptacion {
-    display:block;
-    position:fixed;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    padding-bottom:20px;
-    width:100%;
-    text-align:center;
-    min-height:40px;
+    display: block;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
 }
- 
+
 .inner {
-    width:100%;
-    padding-left:5px;
-    font-family:verdana;
-    font-size:12px;
-    top:30%;
+    width: 100%;
+    padding-left: 5px;
+    font-family: verdana;
+    font-size: 12px;
+    top: 30%;
     bottom: 30%;
 }
- 
+
+
+.title {
+    font-size: 1.5em;
+    color: black;
+}
+
+body {
+    background-color: #f4f4f8;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto;
+
+    flex-direction: row;
+}
+
+.card-list {
+    border: 0;
+    box-shadow: 0 2px 6px 0;
+    border-top: 6px solid #16A2B8;
+    width: 90%;
+    max-width: 500px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+}
+
+.card-header {
+    border: 0;
+}
+
+.card-body {
+    border: 0;
+}
+
+.far {
+    color: #0000008c;
+}
+
+.greeting {
+    text-align: center;
+}
+
+.timeworked {
+    font-size: 5em;
+}
+
+.logout {
+    align-items: flex-end;
+    margin-right: 10%;
+}
+
+.btn-light {
+    background-color: transparent;
+}
+
+.card-detail{
+    border: 0;
+    box-shadow: 0 2px 6px 0;
+    border-top: 6px solid #16A2B8;
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right:auto ;
+    margin-top: 50px;
+}
+
+.delete-form{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.delete-title{
+    font-size: 2rem;
+}
+.delte-warning{
+    font-size: 1rem;
+}
