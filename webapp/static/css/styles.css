@@ -48,7 +48,6 @@
     bottom: 30%;
 }
 
-
 .title {
     font-size: 1.5em;
     color: black;
@@ -66,9 +65,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
-
     flex-direction: row;
 }
 
@@ -97,11 +95,13 @@ body {
 .greeting {
     text-align: center;
 }
-.greeting-new{
-text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;
+
+.greeting-new {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .timeworked {
     font-size: 5em;
 }
@@ -115,56 +115,48 @@ margin-bottom: 20px;
     background-color: transparent;
 }
 
-.card-detail{
+.card-detail {
     border: 0;
     box-shadow: 0 2px 6px 0;
     border-top: 6px solid #16A2B8;
     width: 90%;
     max-width: 900px;
     margin-left: auto;
-    margin-right:auto ;
+    margin-right: auto;
     margin-top: 50px;
 }
 
-.delete-form{
+.delete-form {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
 }
 
-.delete-title{
+.delete-title {
     font-size: 2rem;
 }
-.delte-warning{
+
+.delte-warning {
     font-size: 1rem;
 }
 
-.cont-newProject{
-    border: 0;
-    border-top: 6px solid #16A2B8;
-    box-shadow: 0 2px 6px 0;
-    max-width: 1000px;
-    margin-top: 20px;
-    margin-left: auto; 
-    margin-right: auto;
-    background-color: white;
-    padding-bottom: 30px;
-}
-.newProject-element{
 
+.newProject-element {
     font-size: 1.5rem;
     margin-bottom: 4px;
     margin-top: 15px;
-    margin-left: auto;
+    margin-left: 1rem;
+    margin-right: auto; 
 }
-.textarea{
-    width: 320px;
-}
-#id_project_name{
+
+
+
+#id_project_name {
     font-size: 1.3rem;
 }
-.dropdown-item{
+
+.dropdown-item {
     font-family: Arial;
     font-size: 1rem;
 }

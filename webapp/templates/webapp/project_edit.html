@@ -5,31 +5,36 @@
  
         <h2 class=" display-4 greeting-new">Nuevo Proyecto</h2>
 
-        <div class="container cont-newProject">
-    
-
-    <form method="POST" id="project" class="newProject">
-        {% csrf_token %}
-        <div class="row newProject-element">
-            {% include 'forms/selectBootstrap.html' with field=form.fields.user %}
-        </div>
-        <div class="row newProject-element">
-                <div class="form-group">
-            <label for="id_project_name">Project name:</label>
-            <br>
-            
-            <input name="project_name" maxlength="150" required="" id="id_project_name" type="text">
-        </div>
-        </div>
-        <div class="row newProject-element">
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Description: </label>
-                <textarea  class="form-control textarea" required="" name="description" id="id_description" rows="3"></textarea>
+        <div class="row justify-content-md-center ">
+            <div class="col-md-12 col-lg-12">
+                <div class="card card-detail">
+                    <div class="card-body">
+                        <form method="POST" id="project" class="newProject">
+                            {% csrf_token %}
+                            <div class="row newProject-element">
+                                {% include 'forms/selectBootstrap.html' with field=form.fields.user %}
+                            </div>
+                            <div class="row newProject-element">
+                                <div class="form-group">
+                                    <label for="id_project_name">Project name:</label>
+                                    <br>
+                                    <input name="project_name" maxlength="150" required="" class="input-group input-group-sm mb-3" id="id_project_name" type="text">
+                                </div>
+                            </div>
+                            <div class="row newProject-element">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Description: </label>
+                                    <textarea class="form-control textarea" required="" name="description" id="id_description" cols="80" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" id="btn-save" class="btn btn-info">GUARDAR</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <button type="submit" id="btn-save" class="btn btn-info">GUARDAR</button>
-</div>
-</form>
-</div>
-<script src="{% static 'js/new_project.js' %}"></script>
+
+        
+
+    <script src="{% static 'js/new_project.js' %}"></script>
 {% endblock %}
